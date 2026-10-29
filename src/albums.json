@@ -105,7 +105,8 @@
     "cover": "https://i.scdn.co/image/ab67616d00001e02cf61f929bfba2d8daef7e6cf",
     "spotify": "https://open.spotify.com/album/4tWGTrvcGnqJJh9OkuxRX2",
     "youtube": "https://www.youtube.com/watch?v=PZSxczEeI_c",
-    "youtubeLength": "50:34"
+    "youtubeLength": "50:34",
+    "youtubeEmbed": false
   },
   {
     "artist": "Riverflame",

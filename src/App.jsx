@@ -1,5 +1,7 @@
 import { useMemo, useState } from 'react'
 import albums from './albums.json'
+import ForestBackdrop from './ForestBackdrop.jsx'
+import Player from './Player.jsx'
 
 const SPOTIFY_PLAYLIST = 'https://open.spotify.com/playlist/2H2pNhvWLbpUELpwlcIYdU'
 
@@ -18,12 +20,13 @@ const youtubeAll =
     .filter(Boolean)
     .join(',')
 
-function AlbumCard({ album }) {
+function AlbumCard({ album, playing, onPlay }) {
   return (
-    <article className="album">
-      <a className="cover" href={album.spotify} target="_blank" rel="noopener noreferrer">
-        <img src={album.cover} alt={`${album.artist} – ${album.album}`} loading="lazy" />
-      </a>
+    <article className={playing ? 'album playing' : 'album'}>
+      <button className="cover" onClick={() => onPlay(album)} aria-label={`Play ${album.artist} – ${album.album}`}>
+        <img src={album.cover} alt="" loading="lazy" />
+        <span className="cover-play" aria-hidden="true">{playing ? '♪' : '▶'}</span>
+      </button>
       <p className="country">
         <span className="flag">{album.flag}</span> {album.countryName}
       </p>
@@ -45,6 +48,7 @@ function AlbumCard({ album }) {
 export default function App() {
   const [country, setCountry] = useState('all')
   const [query, setQuery] = useState('')
+  const [playing, setPlaying] = useState(null)
 
   const shown = useMemo(() => {
     const q = query.trim().toLowerCase()
@@ -58,7 +62,8 @@ export default function App() {
   const years = albums.map((a) => a.year)
 
   return (
-    <>
+    <div className={playing ? 'page with-player' : 'page'}>
+      <ForestBackdrop />
       <header className="wrap mast">
         <p className="eyebrow">A folder of melodic black metal</p>
         <h1>Melodic Black Corner</h1>
@@ -108,12 +113,14 @@ export default function App() {
         {shown.length === 0 && <p className="empty">No album matches “{query}”.</p>}
         <div className="grid">
           {shown.map((a) => (
-            <AlbumCard key={a.spotify} album={a} />
+            <AlbumCard key={a.spotify} album={a} playing={playing?.spotify === a.spotify} onPlay={setPlaying} />
           ))}
         </div>
       </main>
 
-      <footer className="wrap">Sorted by land, then in the order of the folder.</footer>
-    </>
+      <footer className="wrap">Sorted by land, then in the order of the folder. Tap a cover to play the full album here.</footer>
+
+      <Player album={playing} onClose={() => setPlaying(null)} />
+    </div>
   )
 }
