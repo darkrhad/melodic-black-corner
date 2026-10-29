@@ -72,6 +72,18 @@
     "youtubeLength": "40:03"
   },
   {
+    "artist": "Belzebubs",
+    "album": "Pantheon Of The Nightside Gods",
+    "year": 2019,
+    "country": "fi",
+    "countryName": "Finland",
+    "flag": "🇫🇮",
+    "cover": "https://i.scdn.co/image/ab67616d00001e02cee16dc7a5d194ecdd891110",
+    "spotify": "https://open.spotify.com/album/0TAQARpkOylXFwDT81Hdvi",
+    "youtube": "https://www.youtube.com/watch?v=YGBvznUvCJs",
+    "youtubeLength": "1:01:45"
+  },
+  {
     "artist": "Blut aus Nord",
     "album": "Hallucinogen",
     "year": 2019,
@@ -371,18 +383,6 @@
     "spotify": "https://open.spotify.com/album/1J50ixIRSqfoKckOoxK8EO",
     "youtube": "https://www.youtube.com/watch?v=BCeTFNOsNRo",
     "youtubeLength": "43:13"
-  },
-  {
-    "artist": "Belzebubs",
-    "album": "Pantheon Of The Nightside Gods",
-    "year": 2019,
-    "country": "se",
-    "countryName": "Sweden",
-    "flag": "🇸🇪",
-    "cover": "https://i.scdn.co/image/ab67616d00001e02cee16dc7a5d194ecdd891110",
-    "spotify": "https://open.spotify.com/album/0TAQARpkOylXFwDT81Hdvi",
-    "youtube": "https://www.youtube.com/watch?v=YGBvznUvCJs",
-    "youtubeLength": "1:01:45"
   },
   {
     "artist": "CHTHONIC",
