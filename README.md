@@ -9,7 +9,11 @@ npm run dev
 
 Album data: `src/albums.json`.
 
-## Deploy (Vercel)
+## Deploy
+
+GitHub Pages: every push to `main` runs `.github/workflows/deploy.yml` → https://darkrhad.github.io/melodic-black-corner/
+
+### Vercel
 
 Import the GitHub repo on vercel.com; `vercel.json` sets the build (`npm run build` → `dist/`).
 Every push to `main` redeploys.
