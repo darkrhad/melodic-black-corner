@@ -65,7 +65,7 @@ export default function App() {
     <div className={playing ? 'page with-player' : 'page'}>
       <ForestBackdrop />
       <header className="wrap mast">
-        <p className="eyebrow">A folder of melodic black metal</p>
+        <p className="eyebrow">Hymns from the cold corners of the world</p>
         <h1>Melodic Black Corner</h1>
         <p className="stats">
           <span><b>{albums.length}</b> albums</span>
