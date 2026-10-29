@@ -72,6 +72,18 @@
     "youtubeLength": "40:03"
   },
   {
+    "artist": "Blut aus Nord",
+    "album": "Hallucinogen",
+    "year": 2019,
+    "country": "fr",
+    "countryName": "France",
+    "flag": "🇫🇷",
+    "cover": "https://i.scdn.co/image/ab67616d00001e02bb0614a04303aa380f589de5",
+    "spotify": "https://open.spotify.com/album/7JE1WpvUTOU06F2CoL5JgB",
+    "youtube": "https://www.youtube.com/watch?v=qk9Eb4i6Wn8",
+    "youtubeLength": "48:59"
+  },
+  {
     "artist": "Winterfylleth",
     "album": "The Reckoning Dawn",
     "year": 2020,
@@ -491,17 +503,5 @@
     "spotify": "https://open.spotify.com/album/6gCZ1gljlvg1tzgTxMDeLE",
     "youtube": "https://www.youtube.com/watch?v=nkeCc6d50WM",
     "youtubeLength": "1:06:01"
-  },
-  {
-    "artist": "Withering Soul",
-    "album": "Passage of the Arcane",
-    "year": 2025,
-    "country": "us",
-    "countryName": "United States",
-    "flag": "🇺🇸",
-    "cover": "https://i.scdn.co/image/ab67616d00001e02f2a34a18541df65128bf5cb4",
-    "spotify": "https://open.spotify.com/album/4jfvEKowhqnNZdfAJwArmD",
-    "youtube": "https://www.youtube.com/watch?v=CfuOSHL4Vuc",
-    "youtubeLength": "41:38"
   }
 ]
